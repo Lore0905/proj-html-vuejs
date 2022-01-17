@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <Header/>
+      <Header :links="headerLinks"/>
     </header>
     <main>
       <Main/>
@@ -23,6 +23,32 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data: function(){
+    return{
+      headerLinks: [
+        {
+          title: 'HOME',
+          href: '#'
+        },
+        {
+          title: 'ABOUT',
+          href: '#'
+        },
+        {
+          title: 'SERVICES',
+          href: '#'
+        },
+        {
+          title: 'PRICING',
+          href: '#'
+        },
+        {
+          title: 'BLOG',
+          href: '#'
+        }
+      ]
+    }
   }
 }
 </script>

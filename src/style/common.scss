@@ -1,0 +1,14 @@
+button{    
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.first-btn > button{
+    background-color: $color2;
+    border: 1px solid $color2;
+}
+.second-btn > button{
+    border: 1px solid $color2;
+    background-color: transparent;
+}
