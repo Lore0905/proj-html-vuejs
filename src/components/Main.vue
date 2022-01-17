@@ -1,15 +1,23 @@
 <template>
     <main>
-        main
+        <!-- jumbotron -->
+        <div class="jumbotron">
+            <Jumbotron/>
+        </div>
     </main>
 </template>
 
 <script>
+import Jumbotron from './Jumbotron.vue'
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        Jumbotron
+    }
 }
 </script>
 
-<style lang="sass">
+<style lang="scss">
+
 
 </style>
