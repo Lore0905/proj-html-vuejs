@@ -1,0 +1,21 @@
+// IMPORT BOOTSTARP
+@import '~bootstrap/scss/bootstrap';
+
+// IMPORT FONT
+@import '~@fontsource/metropolis/200.css';
+@import '~@fontsource/metropolis/300.css';
+@import '~@fontsource/metropolis/400.css';
+@import '~@fontsource/metropolis/900.css';
+
+img{
+    max-width: 100%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body { 
+    font-family: "Metropolis";
+}
