@@ -32,9 +32,6 @@ export default {
 @import './style/general.scss';
 @import './style/common.scss';
 
-main{
-  border: 1px solid black;
-}
 footer{
   border: 1px solid black;
 }

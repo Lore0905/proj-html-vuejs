@@ -1,7 +1,7 @@
 <template>
     <div class="wrapping">
         <div id="jumbotron-img">
-            <img src="../assets/hero-image.png" alt="">
+            <img src="../assets/hero-image.png" alt="banner">
         </div>
         <div id="jumbotron-text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi cum optio quasi ea praesentium sapiente est laudantium commodi quidem. Corporis aspernatur iste maiores. Minima iste quis repellat ea aliquid!
@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .wrapping{
     width: 100%;
     height: 80vh;
@@ -26,22 +27,32 @@ export default {
         height: 100%;
         overflow: hidden;
         object-position: bottom;
+        
         img{
             width: 100%;  
             height: 100%;  
             object-fit: cover;
             object-position: center;  
-            
         }
     }
+
     #jumbotron-text{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        color: white;
     }
-
+}
+// background black banner
+.wrapping::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
 }
 
 </style>
