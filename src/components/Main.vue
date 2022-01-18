@@ -42,14 +42,17 @@ export default {
                 {
                     title: 'Human Capital',
                     paragrafo: 'Humanizing business: Harness the power of technology to improve the way people work.',
+                    class: 'fas fa-user-friends'
                 },
                 {
                     title: 'Core Business',
-                    paragrafo: 'It takes innovative approaches to transform, and run existing platforms.'
+                    paragrafo: 'It takes innovative approaches to transform, and run existing platforms.',
+                    class: 'fas fa-chart-pie'
                 },
                 {
                     title: 'Perforamnce',
-                    paragrafo: 'Archieving maximum impact and value from investements in finance and supply chain.'
+                    paragrafo: 'Archieving maximum impact and value from investements in finance and supply chain.',
+                    class: 'fas fa-tachometer-alt'
                 }
             ]
         }

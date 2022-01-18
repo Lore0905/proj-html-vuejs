@@ -4,7 +4,7 @@
     <div class="container-card white">
         <!-- logo -->
         <div class="circle h-v-center">
-            <i class="fas fa-user-friends"></i>
+            <i class="icon" :class='singleAdvantage.class'></i>
         </div>
         <!-- title -->
         <div class="title">
@@ -35,6 +35,15 @@ export default {
     padding: 40px 50px;
     border-radius: 7px;
     margin:10px;
+    .circle{
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        .icon{
+            color: $color2;
+            font-size: 30px;
+        }
+    }
     .title{
         padding: 20px 0;
         h4{
@@ -52,9 +61,7 @@ export default {
     background-color: white;
 }
 .circle{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    
     background-color: $color3;
 }
 </style>
