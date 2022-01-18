@@ -1,18 +1,22 @@
 <template>
 
 
-    <div class="container-card white">
+    <div class="container-card" :class=" type === 'advantage' ? 'white' : 'grey'">
         <!-- logo -->
-        <div class="circle h-v-center">
-            <i class="icon" :class='singleAdvantage.class'></i>
+        <div class="circle h-v-center" :class="type === 'advantage' ? 'circle-advantage' : 'circle-service'">
+            <i class="icon" :class='cardDetails.class'></i>
         </div>
         <!-- title -->
-        <div class="title">
-            <h4>{{singleAdvantage.title}}</h4>
+        <div class="title" >
+            <h4>{{cardDetails.title}}</h4>
         </div>
         <!-- paragrafo -->
         <div>
-            <p>{{singleAdvantage.paragrafo}}</p>
+            <p>{{cardDetails.paragrafo}}</p>
+        </div>
+        <!-- button -->
+        <div class="btn second-btn p-0" v-if="type === 'service'">
+            <button>READ MORE</button>
         </div>
     </div>
 
@@ -23,7 +27,11 @@
 <script>
 export default {
     name: "Card",
-    props: ['singleAdvantage']
+    props: 
+    {
+        cardDetails: Object, 
+        type: String
+    }
 }
 </script>
 
@@ -48,6 +56,7 @@ export default {
         padding: 20px 0;
         h4{
             font-weight: 500;
+            font-size: 27px;
         }
     }
     p{
@@ -60,8 +69,14 @@ export default {
 .white{
     background-color: white;
 }
-.circle{
-    
+.grey{
+    background-color: #19191f;
+    color: white;
+}
+.circle-advantage{
     background-color: $color3;
+}
+.circle-service{
+    background-color: #19191f;
 }
 </style>
