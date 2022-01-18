@@ -22,8 +22,8 @@
 
                     <!-- wrapping text -->
                     <div class="wrapping-text">
-                        <h5>ABOUT THE NETWORK</h5>
-                        <h2><span class="the-company-section">The</span> Company</h2>
+                        <h5 class="title-area">ABOUT THE NETWORK</h5>
+                        <h2><span class="word-enfasi">The</span> Company</h2>
                         <p>For 12 years we have been providing audit and warranty, financial advice, taxes and related services to select clients.</p>
 
                         <div class="row">
@@ -93,9 +93,9 @@
                 <section class="services">
                     <div class="container">
                         <!-- small title -->
-                        <h5>OUR BUSINESS AREAS</h5>
+                        <h5 class="title-area">OUR BUSINESS AREAS</h5>
                         <!-- title -->
-                        <h2>Excellence in <span>Services</span> </h2>
+                        <h2>Excellence in <span class="word-enfasi">Services</span> </h2>
                         
                         <div class="row">
                             <div class="col-9">
@@ -112,6 +112,163 @@
 
                         <div class="wrapping-card">
                             <Card v-for="(service, index) in services" :key="index" :cardDetails="service" type="service"/>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- PRICING SECTION -->
+                <section class="pricing-table">
+                    <div class="container">
+                        <!-- title area -->
+                        <h5 class="title-area">MONTHLY PLANS</h5>
+                        <!-- title -->
+                        <h2><span class="word-enfasi">Pricing</span>Table</h2>
+                        <!-- paragrafo -->
+                        <p>We can help you deliver and execute your future, wherever you compete, using the latest <br> technologies, from strategy development to implementation</p>
+
+                        <!-- RAW -->
+                        <div class="row">
+                            <!-- COL -->
+                            <div class="col-4">
+
+                                <div class="wrapping-table">
+                                    <!-- img -->
+                                    <div class="logo-table">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <!-- title -->
+                                    <h4>Standard</h4>
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span class="simbol">$</span>
+                                        <span class="number">490</span>
+                                        <span> / mo</span>
+                                    </div>
+                                    <!-- list services -->
+                                    <table>
+                                        <tbody>
+                                            <tr class="row">
+                                                <td class="col-8">Standar Accounting</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Platform Access</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Business Orientation</td>
+                                                <td class="col-4"><i class="fas fa-times"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Dedicated Consultant</td>
+                                                <td class="col-4"><i class="fas fa-times"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Personal Assistance</td>
+                                                <td class="col-4"><i class="fas fa-times"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <!-- COL -->
+                            <div class="col-4 popular-price">
+
+                                <div class="wrapping-table">
+                                    <!-- img -->
+                                    <div class="logo-table">
+                                        <i class="fas fa-suitcase"></i>
+                                    </div>
+                                    <!-- title -->
+                                    <h4>Professional</h4>
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span class="simbol">$</span>
+                                        <span class="number">890</span>
+                                        <span> / mo</span>
+                                    </div>
+                                    <!-- list services -->
+                                    <table>
+                                        <tbody>
+                                            <tr class="row">
+                                                <td class="col-8">Standar Accounting</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Platform Access</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Business Orientation</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Dedicated Consultant</td>
+                                                <td class="col-4"><i class="fas fa-times"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Personal Assistance</td>
+                                                <td class="col-4"><i class="fas fa-times"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- etichetta most popular -->
+                                <div class="label-price-popular">
+                                    Most<br>Popular
+                                </div>
+
+                            </div>
+
+                            <!-- COL -->
+                            <div class="col-4">
+
+                                <div class="wrapping-table">
+                                    <!-- img -->
+                                    <div class="logo-table">
+                                        <i class="far fa-gem"></i>
+                                    </div>
+                                    <!-- title -->
+                                    <h4>Ultimate</h4>
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span class="simbol">$</span>
+                                        <span class="number">1.390</span>
+                                        <span> / mo</span>
+                                    </div>
+                                    <!-- list services -->
+                                    <table>
+                                        <tbody>
+                                            <tr class="row">
+                                                <td class="col-8">Standar Accounting</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Platform Access</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Business Orientation</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Dedicated Consultant</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                            <tr class="row">
+                                                <td class="col-8">Personal Assistance</td>
+                                                <td class="col-4"><i class="fas fa-check"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -199,7 +356,7 @@ main{
             .wrapping-card{
                 display: flex;
                 flex-wrap: wrap;
-                padding: 60px 0;
+                padding: $paddingsection;
 
             }
         }
@@ -216,20 +373,8 @@ main{
 
                 .wrapping-text{
                     width: 55%;
-                    h5{
-                        color: $color2;
-                        font-size: 15px;
-                    }
                     h2{
-                        font-weight: 600;
-                        font-size: 50px;
                         padding: 20px 0;
-                        .the-company-section{
-                            color: $color2;
-                            background-color: rgba(3, 132, 131, 0.1);
-                            padding: 10px 15px;
-                            border-radius: 10px;
-                        }
                     }
                     p{
                         color: #778a94;
@@ -256,27 +401,14 @@ main{
     }
 
     // SERVICES
-    // advantages
     .services{
         background-color: #111117;
         width: 100%;
         color: white;
-        padding: 120px 0;
+        padding: $paddingsection;
         .container{
-            h5{
-                font-size: 15px;
-                color: $color2;
-            }
             h2{
-                font-size: 50px;
-                font-weight: 900;
                 margin: 1rem 0;
-                span{
-                    color: $color2;
-                    background-color: rgba(3, 132, 131, 0.1);
-                    padding: 10px 15px;
-                    border-radius: 7px;
-                }
             }
             .row{
                 align-items: baseline;
@@ -289,6 +421,86 @@ main{
             }
         }
     }
+
+    // PRICING
+    .pricing-table{
+        background-color: $color3;
+        padding: $paddingsection;
+        text-align: center;
+        .container{
+            h5{
+                padding: 25px 0;
+            }
+            p{
+                font-size: 17px;
+                padding: 25px 0;
+                color: $grey;
+            }
+            .row{
+                .col-4{
+                    .wrapping-table{
+                        background-color: white;
+                        border-radius: 10px;
+                        padding: 50px;
+                        font-size: 17px;
+                        position: relative;
+                        .logo-table{
+                            font-size: 50px;
+                            color: $color2;
+                        }
+                        .price{
+                            color: $color2;
+                            padding: 10px 0;
+                            .simbol{
+                                font-size: 25px;
+                            }
+                            .number{
+                                font-size: 40px;
+                                font-weight: 500;
+                            }
+                        }
+                        h4{
+                            font-weight: 500;
+                            font-size: 27px;
+                        }
+                        table{
+                            width: 100%;
+                            text-align: left;
+                            color: $grey;
+                            .col-8{
+                                padding: 10px 0;
+                            }
+                            .col-4{
+                                padding: 10px 0;
+                                text-align: right;
+                                color: $color2;
+                            }
+                        }
+                    }
+                    .label-price-popular{
+                        padding: 7px 15px;
+                        border-radius:  0 10px 10px 0;
+                        background-color: $color2;
+                        display: inline-block;
+                        position: absolute;
+                        top: 10px;
+                        left: 12px;
+                        font-size: 13px;
+                        text-align: left;
+                        line-height: 13px;
+                        color: white;
+                    }
+
+                }
+            }
+        }
+    }
 }
+// dinamiche
+.popular-price{
+    transform: scaleY(1.07);
+}
+
+
 
 </style>
