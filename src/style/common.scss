@@ -12,3 +12,9 @@ button{
     border: 1px solid $color2;
     background-color: transparent;
 }
+
+.h-v-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
