@@ -272,6 +272,40 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- latest news -->
+                <section class="latest-news">
+                    <div class="container">
+
+                        <!-- title-area -->
+                        <div class="title-area">OUR EDITORIAL CONTENT</div>
+                        <!-- title -->
+                        <h2>Latest <span class="word-enfasi">News</span></h2>
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <!-- COL -->
+                            <div class="col-9">
+                                <!-- paragrafo -->
+                                <p>Every we publish content about what is best in the business world.</p>
+                            </div>
+
+                            <!-- COL -->
+                            <div class="col-3">
+                                <div class="btn second-btn">
+                                    <button>SEE ALL</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="wrapping-cards-news">
+                            <CardNews v-for="(news, index) in CardNews" :key="index" :details="news"/>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </section>
         
@@ -281,11 +315,13 @@
 <script>
 import Jumbotron from './Jumbotron.vue'
 import Card from './Card.vue'
+import CardNews from './CardNews.vue'
 export default {
     name: 'Main',
     components: {
         Jumbotron,
-        Card
+        Card,
+        CardNews
     },
     data: function(){
         return{
@@ -337,7 +373,27 @@ export default {
                     paragrafo: 'Lorem ipsum dolor, sit amet consectetur adipisicing .',
                     class: 'fas fa-box' 
                 }
-            ]
+            ],
+            CardNews: [
+                {
+                    title: 'Increasing creativity is possible for everyone',
+                    paragrafo: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+                    author: 'Andrea Miller',
+                    img: 'news-1'
+                },
+                {
+                    title: 'Becouse Market reserch is part of the business plan',
+                    paragrafo: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+                    author: 'Andrea Miller',
+                    img: 'news-2'
+                },
+                {
+                    title: 'Working from home is now a trend',
+                    paragrafo: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+                    author: 'Andrea Miller',
+                    img: 'news-3'
+                }
+            ],
         }
     }
 }
@@ -495,11 +551,41 @@ main{
             }
         }
     }
+    // dinamiche
+    .popular-price{
+        transform: scaleY(1.07);
+    }
+    // LATEST NEWS
+    .latest-news{
+        padding: $paddingsection;
+        .container{
+            h2{
+                padding: 20px 0;
+            }
+            .row{
+                align-items: baseline;
+                .col-9{
+                    color: $grey;
+                }
+                .col-3{
+                    .second-btn{
+                        background-color: $color2;
+                    }
+                }
+            }
+            .wrapping-cards-news{
+                padding: 50px 0;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
 }
-// dinamiche
-.popular-price{
-    transform: scaleY(1.07);
-}
+
+
+
+
 
 
 
