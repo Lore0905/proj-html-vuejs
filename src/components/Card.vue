@@ -60,7 +60,7 @@ export default {
         }
     }
     p{
-        color: $grey;
+        color: $grey1;
         font-size: 18px;
     }
 }
@@ -78,5 +78,10 @@ export default {
 }
 .circle-service{
     background-color: #19191f;
+}
+// hover
+.container-card:hover {
+    position: relative;
+    bottom: 10px;
 }
 </style>

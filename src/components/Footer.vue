@@ -110,6 +110,7 @@ div{
                 li{
                     display: flex;
                     margin-bottom: 10px;
+                    align-items: center;
                     i{
                         margin-right: 10px;
                     }

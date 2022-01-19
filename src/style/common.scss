@@ -17,7 +17,11 @@ button{
     color: $color2;
     background-color: white;
 }
+.btn:hover{
+    transform: scale(1.1);
+}
 
+// centartura
 .h-v-center{
     display: flex;
     align-items: center;
@@ -37,6 +41,7 @@ button{
 .title-area{
     color: $color2;
     font-size: 15px;
+    font-weight: 500;
 }
 
 h2{

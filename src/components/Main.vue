@@ -362,7 +362,10 @@
 
                                 <!-- input -->
                                 <div class="input-message-section">
-                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Name" id="name-input">
+                                    <!-- <div id="internal-img">
+                                        <img src="../assets/image (1).png" alt="">
+                                    </div> -->
                                     <input type="email" placeholder="Email">
                                     <input type="text" placeholder="Phone">
                                     <input type="text" placeholder="More Info">
@@ -559,7 +562,7 @@ main{
                         padding: 20px 0;
                     }
                     p{
-                        color: #778a94;
+                        color: $grey1;
                         font-weight: 200;
                         font-size: 17px;
                     }
@@ -616,7 +619,7 @@ main{
             p{
                 font-size: 17px;
                 padding: 25px 0;
-                color: $grey;
+                color: $grey1;
             }
             .row{
                 .col-4{
@@ -648,7 +651,7 @@ main{
                         table{
                             width: 100%;
                             text-align: left;
-                            color: $grey;
+                            color: $grey1;
                             .col-8{
                                 padding: 10px 0;
                             }
@@ -691,7 +694,7 @@ main{
             .row{
                 align-items: baseline;
                 .col-9{
-                    color: $grey;
+                    color: $grey1;
                 }
                 .col-3{
                     .second-btn{
@@ -726,7 +729,7 @@ main{
                 .col-6{
                     // col-sx
                     h2{
-                        padding: 12px 0;
+                        padding: 20px 0;
                         .word-enfasi{
                             color: white;
                         }
@@ -769,7 +772,7 @@ main{
                             padding: 2rem 0px;
                         }
                         p{
-                            color: $grey;
+                            color: $grey1;
                             font-weight: 200;
                         }
                     }
@@ -781,10 +784,18 @@ main{
                             background-color: rgba($color: #8d8f92, $alpha: 0.2);
                             padding: 12px;
                             margin: 10px 0px;
+                            
                         }
+                        // #name-input{
+                        //     position: relative;
+                        // }
                         input:nth-child(odd){
                             margin-right: 20px;
                         }
+                        // #internal-img {
+                        //     position: absolute;
+                        //     top: 0;
+                        // }
                         div{
                             #text-area-message{
                                 width: 100%;
@@ -816,7 +827,7 @@ main{
                         }
                         p{
                             margin: 0px;
-                            color: $grey;
+                            color: $grey1;
                             font-weight: 200;
                             font-size: 17px;
                         }
