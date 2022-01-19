@@ -343,7 +343,7 @@
                 <!-- send a mesage -->
                 <section class="message-wrapping">
                     <div class="container">
-                        <div class="row">
+                        <div class="row gx-5">
 
                             <!-- col -->
                             <div class="col-8">
@@ -379,7 +379,54 @@
 
                             <!-- col -->
                             <div class="col-4">
-                                ciao
+                                
+                                <!-- text -->
+                                <div class="text-message-section">
+                                    <!-- title col -->
+                                    <h4> Example Inc.</h4>
+                                    <!-- paragrafi -->
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    <br>
+                                    <p>Prasent diam lacus, dapibus sed imperdiet consectur.</p>
+                                </div>
+
+                                <!-- references -->
+                                <div>
+                                    <ul class="p-0">
+                                        <li>
+                                            <div class="circle h-v-center circle-advantage">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </div>
+                                            <!-- number -->
+                                            <div class="text">
+                                                +1 (305) 1234-5678
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="circle h-v-center circle-advantage">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <!-- email -->
+                                            <div class="text">
+                                                hello@example.com
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="circle h-v-center circle-advantage">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <!-- number -->
+                                            <div class="text">
+                                                Main Avenue, 987
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- button -->
+                                <div class="btn third-btn">
+                                    <button>VIEW MAP</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -716,6 +763,16 @@ main{
         .container{
             .row{
                 .col-8{
+                    .text-message-section{
+                        margin-bottom: 2rem;
+                        h2{
+                            padding: 2rem 0px;
+                        }
+                        p{
+                            color: $grey;
+                            font-weight: 200;
+                        }
+                    }
                     .input-message-section{
                         input{
                             width: calc(50% - 10px);
@@ -742,13 +799,51 @@ main{
                             }
                         }
                     }
-                }
-                .second-btn{
-                    margin-top: 10px;
-                    button{
-                        background-color: $color2;
+                    .second-btn{
+                        margin-top: 10px;
+                        button{
+                            background-color: $color2;
+                        }
                     }
                 }
+                .col-4{
+                    .text-message-section{
+                        margin-bottom: 2rem;
+                        h4{
+                            font-weight: 500;
+                            margin-bottom: 1rem;
+
+                        }
+                        p{
+                            margin: 0px;
+                            color: $grey;
+                            font-weight: 200;
+                            font-size: 17px;
+                        }
+                    }
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        .circle{
+                            border-radius: 50%;
+                            width: 50px;
+                            height: 50px;
+                            margin-right: 10px;
+                            
+                            i{
+                                color: $color2;
+                                font-size: 17px;
+                            }
+                        }
+                        .text{
+                            color: $color2;
+                            font-size: 18px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+                
             }
         }
     }

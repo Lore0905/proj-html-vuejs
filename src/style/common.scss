@@ -12,6 +12,11 @@ button{
     border: 1px solid $color2;
     background-color: transparent;
 }
+.third-btn > button{
+    border: 1px solid $color2;
+    color: $color2;
+    background-color: white;
+}
 
 .h-v-center{
     display: flex;
