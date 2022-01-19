@@ -2,7 +2,37 @@
     <header>
         <!-- CONTACTS -->
         <section class="contact">
-
+            <div class="container">
+                <div class="row">
+                    <!-- col -->
+                    <div class="col-6">
+                        <i class="fas fa-clock mx-2"></i>
+                        <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+                    </div>
+                    <!-- col -->
+                    <div class="col-6">
+                        <ul class="p-0">
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                +1 (305) 1234-5678
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                hello@example.com
+                            </li>
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- NAV -->
@@ -47,7 +77,14 @@ header{
     .contact{
         width: 100%;
         height: 40px;
-        background-color: $color1
+        background-color: $color1;
+        display: flex;
+        align-items: center;
+        color: $grey;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
     .nav{
         position: relative;

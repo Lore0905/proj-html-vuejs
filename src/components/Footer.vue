@@ -96,11 +96,11 @@ export default {
 <style lang="scss">
 @import '../style/variables.scss';
 div{
-    color: $grey;
     font-weight: 200;
     .footer-top{
         background-color: #111117;
         padding: $paddingsection;
+        color: $grey;
         .col-3{
             p{
                 padding: 20px 0;
@@ -133,6 +133,7 @@ div{
     .footer-bottom{
         background-color: #0d0c11;
         padding: 30px;
+        color: $grey;
     }
 }
 
