@@ -306,6 +306,40 @@
                     </div>
                 </section>
 
+
+                <!-- news letter -->
+                <section class="newsletter-wrapping">
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- col -->
+                            <div class="col-6">
+                                 <!-- title area -->
+                                <div class="title-area">
+                                    NEWSLETTER
+                                </div>
+                                <!-- title -->
+                                <h2><span class="word-enfasi">Know</span> First</h2>
+                                <!-- paragrafo -->
+                                <p>Follow closely and receive content about our company and the news of the current market.</p>
+                            </div>
+
+                            <!-- col -->
+                            <div class="col-6">
+                                <!-- input -->
+                                <div class="wrapping-input">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <!-- button -->
+                                <div class="btn second-btn p-0">
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </section>
         
@@ -577,6 +611,56 @@ main{
                 padding: 50px 0;
                 display: flex;
                 justify-content: space-between;
+            }
+        }
+    }
+
+    // NEWS LETTER
+    .newsletter-wrapping{
+        width: 100%;
+        height: 500px;
+        background-image: url(../assets/bg-1.jpg);
+        background-position-y: center;
+        background-size: cover;
+        color: white;
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 100px;
+            .row{
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                .col-6{
+                    // col-sx
+                    h2{
+                        padding: 12px 0;
+                        .word-enfasi{
+                            color: white;
+                        }
+                    }
+                    p{
+                        color: $grey;
+                    }
+                    // col-dx
+                    .wrapping-input{
+                        margin: 10px 0;
+                        input{
+                            width: 80%;
+                            border-radius: 5px;
+                            border: 0px;
+                            background-color: rgba($color: #ffffff, $alpha: 0.5);
+                            padding: 10px;
+                            margin: 10px 0;
+                        }
+                    }
+                    .second-btn{
+                        button{
+                            background-color: $color2;
+                        }
+                    }
+                }
+                
             }
         }
     }
