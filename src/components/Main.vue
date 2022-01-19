@@ -340,6 +340,51 @@
                     </div>
                 </section>
 
+                <!-- send a mesage -->
+                <section class="message-wrapping">
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- col -->
+                            <div class="col-8">
+
+                                <!-- text -->
+                                <div class="text-message-section">
+                                    <!-- title area -->
+                                    <div class="title-area">
+                                        SEND A MESSAGE
+                                    </div>
+                                    <!-- title -->
+                                    <h2>Get in <span class="word-enfasi">Touch</span></h2>
+                                    <!-- paragrafo -->
+                                    <p>We will respond to your message as soon as possible.</p>
+                                </div>
+
+                                <!-- input -->
+                                <div class="input-message-section">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                    <input type="text" placeholder="Phone">
+                                    <input type="text" placeholder="More Info">
+                                    <div>
+                                        <textarea name="" id="text-area-message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- button -->
+                                <div class="btn second-btn p-0">
+                                    <button>SEND</button>
+                                </div>
+                            </div>
+
+                            <!-- col -->
+                            <div class="col-4">
+                                ciao
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </section>
         
@@ -650,7 +695,7 @@ main{
                             border-radius: 5px;
                             border: 0px;
                             background-color: rgba($color: #ffffff, $alpha: 0.5);
-                            padding: 10px;
+                            padding: 12px;
                             margin: 10px 0;
                         }
                     }
@@ -661,6 +706,49 @@ main{
                     }
                 }
                 
+            }
+        }
+    }
+
+    // message
+    .message-wrapping{
+        padding: $paddingsection;
+        .container{
+            .row{
+                .col-8{
+                    .input-message-section{
+                        input{
+                            width: calc(50% - 10px);
+                            border-radius: 5px;
+                            border: 0px;
+                            background-color: rgba($color: #8d8f92, $alpha: 0.2);
+                            padding: 12px;
+                            margin: 10px 0px;
+                        }
+                        input:nth-child(odd){
+                            margin-right: 20px;
+                        }
+                        div{
+                            #text-area-message{
+                                width: 100%;
+                                height: 150px;
+                                border-radius: 5px;
+                                min-height: 50px;
+                                max-height: 250px;
+                                border: 0px;
+                                padding: 12px;
+                                margin-top: 10px;
+                                background-color: rgba($color: #8d8f92, $alpha: 0.2);
+                            }
+                        }
+                    }
+                }
+                .second-btn{
+                    margin-top: 10px;
+                    button{
+                        background-color: $color2;
+                    }
+                }
             }
         }
     }
