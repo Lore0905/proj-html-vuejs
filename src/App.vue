@@ -7,7 +7,7 @@
       <Main/>
     </main>
     <footer>
-      <Footer/>
+      <Footer :links="footerLinks"/>
     </footer>
   </div>
 </template>
@@ -47,7 +47,46 @@ export default {
           title: 'BLOG',
           href: '#'
         }
+      ],
+      footerLinks: [
+        {
+          title: 'About',
+          link: [
+            'The company',
+            'Istitutional',
+            'Social & Events',
+            'Innovation',
+            'Environment',
+            'Technology',
+            
+          ]
+        },
+        {
+          title: 'Services',
+          link: [
+            'Audit & Assurance',
+            'Financial Advisory',
+            'Analytics M&A',
+            'Middle Marketing',
+            'Legal Consulting',
+            'Regultory Risk',
+            
+          ]
+        },
+        {
+          title: 'Support',
+          link: [
+            'Responsibility',
+            'Terms of Use',
+            'About Cookies',
+            'Privacy Policy',
+            'Accessibility',
+            'Information',
+            
+          ]
+        },
       ]
+
     }
   }
 }
@@ -58,8 +97,5 @@ export default {
 @import './style/general.scss';
 @import './style/common.scss';
 
-footer{
-  border: 1px solid black;
-}
 
 </style>
